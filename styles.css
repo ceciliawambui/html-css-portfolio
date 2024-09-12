@@ -1,0 +1,159 @@
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+*{
+    background-color: black;
+    color: white;
+}
+
+.navbar {
+    background-color: black;
+    overflow: hidden;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.navbar .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    float: left;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    color: white;
+    float: right;
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+}
+
+.nav-links li a:hover {
+    background-color: #575757;
+    transition: background-color 0.3s;
+}
+#home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #f0f0f0; */
+    padding: 20px;
+    margin: 20px;
+    /* border-radius: 10px; */
+    
+
+}
+#about{
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    /* background-color: #f0f0f0; */
+    padding: 20px;
+    /* margin: 20px; */
+    /* border-radius: 10px; */
+
+}
+.intro{
+    flex: 1;
+    padding-right: 20px;
+    font-size:larger;
+
+}
+.about-summary{
+    flex: 1;
+    padding-right: 20px;
+    font-size:larger;
+
+}
+.intro h2{
+    color: red;
+}
+.intro-image{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.about-lang{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+/* .about-image img {
+    max-width: 100%;
+    height: 550px;
+    border-radius: 50%;
+} */
+.intro-image img {
+    max-width: 100%;
+    height: 550px;
+    border-radius: 50%;
+}
+@media (max-width: 768px) {
+    #home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .intro-image img {
+        width: 150px;
+        height: auto;
+    }
+}
+
+/* Media Query for Mobile Screens */
+@media (max-width: 768px) {
+    /* Stack links vertically */
+    .nav-links {
+        display: none;
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links li {
+        display: block;
+        margin: 0;
+    }
+
+    /* Show the menu icon on mobile */
+    .menu-icon {
+        display: block;
+    }
+
+    /* Toggle the menu when checkbox is checked */
+    #menu-toggle:checked + .menu-icon + .nav-links {
+        display: block;
+    }
+}
+
+
