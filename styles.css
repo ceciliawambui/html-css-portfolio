@@ -4,6 +4,7 @@ body {
     padding: 0;
     background-color: black;
     overflow-x: hidden;
+    /* margin-left: 60px; */
     
 
 }
@@ -11,7 +12,6 @@ body {
     background-color: black;
     color: white;
     font-family: "Afacad Flux", sans-serif;
-    font-size: large;
 
 
 }
@@ -76,7 +76,10 @@ body {
     align-items: center;
     /* background-color: #f0f0f0; */
     /* padding-left: 10px; */
-    margin-left: 10px;
+    margin-left: 90px;
+    margin-right: 90px;
+
+    margin-top: -20px;
     /* border-radius: 10px; */
     
 
@@ -87,6 +90,9 @@ body {
     align-items: left;
     /* background-color: #f0f0f0; */
     padding: 10px;
+    margin-left: 90px;
+    margin-right: 90px;
+
     /* margin: 20px; */
     /* border-radius: 10px; */
 
@@ -94,13 +100,13 @@ body {
 .intro{
     flex: 1;
     padding-right: 20px;
-    font-size:larger;
+    font-size:50px;
 
 }
 .about-summary{
     flex: 1;
     padding-right: 20px;
-    font-size:larger;
+    /* font-size:larger; */
 
 }
 .intro h2{
@@ -167,6 +173,9 @@ body {
     #menu-toggle:checked + .menu-icon + .nav-links {
         display: block;
     }
+}
+p{
+    font-size: 22px;
 }
 
 .tech-stack {
